@@ -1,5 +1,7 @@
 ;(function($,window,document,undefined){
    $.fn.select_change=function(){
+	   if(!$(this).is('select'))
+		throw new Error("请选择select框");
 	   var Q_status=false;//全局判断blur
 	   var select = $(this);
 	   var select_width=$(this).width()+100+'px';
