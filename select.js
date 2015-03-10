@@ -7,7 +7,7 @@
 	   var select_width=$(this).width()+100+'px';
 	   var select_position=$(this).position();
 	   var oldval=select.html();//查询原始option
-	   var objpos={ "position":"absolute","top":select_position.top+22,"left":select_position.left,'width':select_width};
+	   var objpos={ "position":"absolute",'width':select_width};
 	   select.css(objpos).hide().attr('size',10);
 		$('<input type="text" class="select_change"  style="width:'+select_width+'">').insertBefore(select);//input框
 //监听select和input的相关时间		
